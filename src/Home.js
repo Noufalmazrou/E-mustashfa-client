@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Upload from './compunants/Upload'
 
 export class Home extends Component {
     render() {
@@ -7,6 +8,7 @@ export class Home extends Component {
                 <br/>
                 <br/>
                 <h1>انت في البيت</h1>
+                <Upload/>
             </div>
 
         )
