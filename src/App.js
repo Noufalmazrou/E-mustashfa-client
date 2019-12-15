@@ -1,13 +1,14 @@
+
 import React, { Component } from "react";
 import './App.css';
 import { Route, BrowserRouter, Switch,NavLink} from 'react-router-dom';
 import { Navbar, Nav} from 'react-bootstrap';
-import Home from "./Home";
 import AboutUs from "./AboutUs";
 import ContactUs from "./ContactUs";
 import Reservations from "./Reservations";
 import Signin from "./Signin";
 import Signup from "./Signup";
+import Home from './Home/Home'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -57,5 +58,6 @@ export class App extends Component {
 }
 
 export default App
+
 
 
