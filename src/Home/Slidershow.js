@@ -9,13 +9,16 @@ import '../App.css'
 
 
 const  Slidershow  = () => {
+	
 	let  elements  = [
 		{
 			render:()=>{
 				return <Button  fluid> <img src ={H2} /></Button>
 			}
 		},
+		
 		{
+			
 			render:()=>{
 				return <Button  fluid > <img src ={H1}/></Button>
 			}
@@ -23,7 +26,7 @@ const  Slidershow  = () => {
         
         {
 			render:()=>{
-				return <Button  fluid > <img src ={H3}/></Button>
+				return <Button  fluid > <img src ={H3} style ={{}}/></Button>
 			}
         },
    

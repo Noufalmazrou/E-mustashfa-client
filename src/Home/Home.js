@@ -25,8 +25,8 @@ export default class Home extends Component {
             onClick={this.handleItemClick}
           />
           <Menu.Item
-            name='Services'
-            active={activeItem === 'Services'}
+            name='Appointments'
+            active={activeItem === 'Appointments'}
             onClick={this.handleItemClick}
           />
           <Menu.Menu position='right'>
