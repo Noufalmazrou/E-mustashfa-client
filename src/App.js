@@ -3,13 +3,15 @@ import './App.css';
 import { Route, BrowserRouter, Switch,NavLink} from 'react-router-dom';
 import AboutUs from "./about/about";
 import Reservations from "./Reservations";
-import Signin from "./Regester/Signin";
-import Signup from "./Regester/Signup";
+import Signin from "./Register/Signin";
+import Signup from "./Register/Signup";
 import Home from './Home/Home'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Patiants from './Form/patiants'
 import Nav from './Home/Nav'
 import Upload from './uploading/Upload'
+import Changepass from './Register/Changepass'
+
 
 
 
@@ -28,7 +30,7 @@ export class App extends Component {
             <Route path="/patiants" component={ ()=> <Patiants/>} />
             {/* You can delete this VVV */}
             <Route path="/upload" component={ ()=> <Upload/>} /> 
-
+            <Route path="/Changepass" component={ ()=> <Changepass/>} />
 
           </Switch>
         </BrowserRouter>
