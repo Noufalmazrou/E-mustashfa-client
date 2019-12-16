@@ -17,35 +17,6 @@ export default class Home extends Component {
     return (
       <div>
 
-        <Menu secondary>
-          <Menu.Item name='home' active={activeItem === 'home'} onClick={this.handleItemClick} />
-          <Menu.Item
-            name='About us'
-            active={activeItem === 'About us'}
-            onClick={this.handleItemClick}
-          />
-          <Menu.Item
-            name='Services'
-            active={activeItem === 'Services'}
-            onClick={this.handleItemClick}
-          />
-          <Menu.Menu position='right'>
-            <Menu.Item>
-              <Input icon='search' placeholder='Search...' />
-            </Menu.Item>
-            <Menu.Item
-              name='Signin'
-              active={activeItem === 'Signin'}
-              onClick={this.handleItemClick}
-            />
-
-            <Menu.Item
-              name='Signup'
-              active={activeItem === 'Signup'}
-              onClick={this.handleItemClick}
-            />
-          </Menu.Menu>
-        </Menu>
         <Slidershow />
 
         <br />
