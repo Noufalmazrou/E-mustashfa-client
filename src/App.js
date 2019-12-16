@@ -13,6 +13,10 @@ import Rays from './Home/Rays'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Patiants from './Form/patiants'
 import Nav from './Home/Nav'
+import Surgries from './Surgries.js'
+import Diseases from './Diseases'
+import Medical from './Medical'
+
 
 export class App extends Component {
   render() {
@@ -27,10 +31,14 @@ export class App extends Component {
             <Route path="/Reservations" component={ ()=> <Reservations/>} />
             <Route path="/signin" component={ ()=> <Signin />} />
             <Route path="/signup" component={ ()=> <Signup />} />
-            <Route path="/medicalrecords" component={ ()=> <Medicalrecords/>} />
+            <Route path="/medicalrecords" render={ ()=> <Medicalrecords/>} />
             <Route path="/tests" component={ ()=> <Tests/>} />
             <Route path="/rays" component={ ()=> <Rays/>} />
             <Route path="/drugs" component={ ()=> <Drugs/>} />
+            <Route path="/surgries" component={ ()=> <Surgries/>} />
+            <Route path="/diseases" component={ ()=> <Diseases/>} />
+            <Route path="/medical" component={ ()=> <Medical/>} />
+
 
 
           </Switch>

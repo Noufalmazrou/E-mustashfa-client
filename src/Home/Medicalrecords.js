@@ -1,32 +1,47 @@
-import React from 'react'
-import { Divider, Form, Label } from 'semantic-ui-react'
+import React, { Component,Fragment } from 'react'
+import { Menu, Form, Grid, Header, TextArea  } from 'semantic-ui-react'
 import "semantic-ui-css/semantic.min.css"
+import { Link } from 'react-router-dom/cjs/react-router-dom.min'
 
-const LabelExamplePointing = () => (
-  <Form>
-    <Form.Field>
-      <input type='text' placeholder='First name' />
-      <Label pointing>Please enter a value</Label>
-    </Form.Field>
-    <Divider />
+export class Medicalrecords extends Component {
+  state={
+    type:null
+  }
+  chioce =(type)=>{
+    this.setState({
+      type: type
+    })
+  }
+    render() {
+        return (
+            <div>
+            <Fragment>
+        <Grid>
+          {/* <Grid.Row columns ={2}> */}
+    
+          <Grid.Column width={4}>
+            <Menu vertical>
+              <Header icon="user" attached inverted color="black" content="Select One" />
+              <Menu.Item onCLick={()=>this.chioce('Previous Surgries')}>Previous Surgries</Menu.Item>
+              <Menu.Item onCLick={()=>this.chioce('long Diseases')}>long Diseases</Menu.Item>
+              <Menu.Item onCLick={()=>this.chioce('Medical State')}>Medical State</Menu.Item>
+            </Menu>
+            </Grid.Column>
+            <Grid.Column width={8}>
+              <Form>
+                <TextArea placeholder='Tell us more' name= "Medical" onChange={this.updateSearch} />
+              </Form>
+            </Grid.Column>
+            
+            {/* <Grid.Row /> */}
+        </Grid>
+      </Fragment>
+            
+                
+            </div>
+        )
+    }
+}
 
-    <Form.Field>
-      <Label pointing='below'>Please enter a value</Label>
-      <input type='text' placeholder='Last Name' />
-    </Form.Field>
-    <Divider />
+export default Medicalrecords
 
-    <Form.Field inline>
-      <input type='text' placeholder='Username' />
-      <Label pointing='left'>That name is taken!</Label>
-    </Form.Field>
-    <Divider />
-
-    <Form.Field inline>
-      <Label pointing='right'>Your password must be 6 characters or more</Label>
-      <input type='password' placeholder='Password' />
-    </Form.Field>
-  </Form>
-)
-
-export default LabelExamplePointing

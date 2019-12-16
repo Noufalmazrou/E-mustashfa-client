@@ -7,20 +7,28 @@ import "react-datepicker/dist/react-datepicker.css";
 // import 'react-datepicker/dist/react-datepicker-cssmodules.css';
 
 class Tests extends React.Component {
-  state = {
-    startDate: new Date()
-  };
-
-  handleChange = date => {
-    this.setState({
-      startDate: date
-    });
-  };
+    state = {
+        date: new Date(),
+        
+      };
+    
+      updateSearch =({target:{value , name}})=>{
+    
+        this.setState({[name]: value});
+       
+      }
+      handleChange = date => {
+        this.setState({
+          date: date,
+        });
+      };
 
   render() {
+      console.log(this.state);
+      
     return (
-      <DatePicker
-        selected={this.state.startDate}
+      <DatePicker name= "Date" onChange={this.updateSearch}
+        selected={this.state.date}
         onChange={this.handleChange}
       />
     );
