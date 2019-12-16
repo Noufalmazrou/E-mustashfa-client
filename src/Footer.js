@@ -1,53 +1,47 @@
-import React, { Component ,Row,Col} from 'react'
-import { Input, Menu, Container } from 'semantic-ui-react'
+import React, { Component, Row, Col } from 'react'
+import { Input, Menu, Container, Grid, Icon } from 'semantic-ui-react'
 import App from './App'
 
 export default class Footer extends Component {
     render() {
         return (
             <div>
-                
+
                 <footer className="footer1">
-                    <Container>
-                        <Row>
-                            <Col size={3}>
-                                <div className="aboutUs">
+                    <Container style={{ margin: '0 auto' }}>
+                        <Grid columns={2} divided reversed='mobile'>
+                            <Grid.Row>
+                                <Grid.Column><div className="Contact">
                                     <ul>
-                                        <h2>About us</h2>
-                                        <ol> <a href=''>Brif</a> </ol>
-                                        <ol> <a href=''>FAQ</a> </ol>
-                                        <ol> <a href=''>Help</a> </ol>
+                                        <h2> Contact Us</h2>
+                                        <br/>
+                                        <ol> Adress:Badir,Amanah Street ,Jeddah </ol>
+                                        <ol> Phone: 00221133445 </ol>
+                                        <ol> <a href=''>E-mail:emustashfa@mashfa.com</a> </ol>
                                     </ul>
-                                </div>
-                            </Col>
+                                </div></Grid.Column>
 
 
-                            <Col size={3} >
-                                <div className="Contact">
-                                    <ul>
-                                        <h2>Contact us</h2>
-                                        <ol><a href=''>  920004315</a></ol>
-                                        <ol><a href=''>info@jsh.sa</a></ol>
-                                    </ul>
-                                </div>
-                            </Col>
-                            <Row>
-                                <Col size={3}>
-                                    <div className="Folow">
-                                        <h2>Follow us </h2>
-                                        {/* <Row>
-                                            <Col >< FaFacebook /></Col>
-                                            <Col><FaTwitterSquare /></Col>
-                                            <Col > <FaInstagram /></Col>
-                                            <Col><FaYoutube /></Col>
-                                        </Row> */}
 
+                                <Grid.Column>
+                                    <div className="Social">
+                                        <ul>
+                                          <ol>  <h2>Social</h2></ol>
+                                          <br/>
+                                            <ol><a href=''> <Icon disabled name='facebook' size='big'/> </a></ol>
+                                            <ol><a href=''> <Icon disabled name='twitter'   size='big'/> </a></ol>
+                                            <ol><a href=''> <Icon disabled name='instagram'  size='big' /> </a></ol>
+                                            <ol><a href=''> <Icon disabled name='youtube'  size='big' /> </a></ol>
+
+                                        </ul>
                                     </div>
-                                </Col>
-                            </Row>
+                                </Grid.Column>
 
-                  
-                        </Row>
+                            </Grid.Row>
+                            <Grid.Row>
+                                <Grid.Column className="u"> 2019 Dony by general Assembly studdents</Grid.Column>
+                            </Grid.Row>
+                        </Grid>
                     </Container>
                 </footer>
             </div>

@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
 import Slidershow from '../Home/Slidershow'
 import Cards from './Cards'
-import { Input, Menu, Container } from 'semantic-ui-react'
+import { Input, Menu, Container, Grid } from 'semantic-ui-react'
 import "semantic-ui-css/semantic.min.css"
+import Footer from '../Footer'
 
 
 export default class Home extends Component {
@@ -51,8 +52,9 @@ export default class Home extends Component {
         <br />
         <br />
         <br />
-        <br/>
+        <br />
         <Cards />
+        <Footer />
 
 
       </div>
