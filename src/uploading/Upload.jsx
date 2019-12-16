@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import {storage} from './config'
-  
+  //you have to pass a function in props named getUrl to retrive the link 
 export default class Upload extends Component {
     constructor(){
         super() 
@@ -11,17 +11,7 @@ export default class Upload extends Component {
         this.FileSelectedHandler = this.FileSelectedHandler.bind(this)
         this.fileUploadHandler =  this.fileUploadHandler.bind(this)
     }
-    FileSelectedHandler = event => {
-        if(event.target.files[0]){
-          const img = event.target.files[0];
-          this.setState({
-            uploded_img:img
-          })
-          console.log(this.state.uploded_img);
-          console.log(img);
-          
-        }
-    }
+   
     fileUploadHandler(){
         console.log('hiiiiii');
         
@@ -41,19 +31,30 @@ export default class Upload extends Component {
          this.setState({
            img_url:url
          })
+         this.props.getUrl(url)
         })
       })
       }
+      FileSelectedHandler = event => {
+        if(event.target.files[0]){
+          const img = event.target.files[0];
+          this.setState({
+            uploded_img:img
+          })
+          console.log(this.state.uploded_img);
+          console.log(img);
+          
+        }
+    }
     render() {
         return (
             <div>
                 
-                <input type="file" name="files" id="" onChange={this.FileSelectedHandler}/>
-                <button onClick={()=>this.fileUploadHandler()}>idlkjklgjoieqrjlkgjk</button>
+                <input className="uplading" type="file" name="files" id="" onChange={this.FileSelectedHandler}/>
+                <button onClick={()=>this.fileUploadHandler()}>Submit</button>
                 <button onClick={()=>console.log(this.state.img_url)
-                } >priny</button>
-                   <button onClick={()=>console.log(this.state.uploded_img)
-                } >uploded</button>
+                } >Print</button>
+                 
             </div>
         )
     }
