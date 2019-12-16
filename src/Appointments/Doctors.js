@@ -2,14 +2,14 @@ import React from 'react'
 import { Card, Icon, Container, Grid } from 'semantic-ui-react'
 import Footer from '../Footer'
 import Slidershow from '../Home/Slidershow'
-import Ka from '../img/Ka.jpg'
-import KFM from '../img/KFM.jpg'
-import Kfr from '../img/Kfr.png'
-import SFH from '../img/SFH.png'
-import SG from '../img/SG.jpg'
-import HG from '../img/HG.jfif'
-import Ho2 from '../img/Ho2.jpg'
-import UD from '../img/UD.jpg'
+import D2 from '../img/D2.png'
+import D3 from '../img/D3.png'
+import D4 from '../img/D4.jpg'
+import D5 from '../img/D5.jpg'
+import D6 from '../img/D6.jpg'
+import D7 from '../img/D7.jpg'
+import D8 from '../img/D8.jpg'
+import D9 from '../img/D9.jpg'
 
 
 
@@ -36,10 +36,10 @@ const CardExampleCardProps = () => (
           <Grid.Column width={5}>
             <Card
               fluid
-              image={KFM}
-              header='Elliot Baker'
-              meta='Friend'
-              description='Elliot is a sound engineer living in Nashville who enjoys playing guitar and hanging with his cat.'
+              image={D2}
+              header='Dr.Ahmed Afandi '
+              meta='Vascular Surgery'
+              description='Consultant Vascular Surgery'
 
             />
           </Grid.Column>
@@ -47,10 +47,10 @@ const CardExampleCardProps = () => (
 
             <Card
               fluid
-              image={UD}
-              header='Elliot Baker'
-              meta='Friend'
-              description='Elliot is a sound engineer living in Nashville who enjoys playing guitar and hanging with his cat.'
+              image={D3}
+              header='Dr.Iman Elsayed Afsah'
+              meta='Physical Medicine & Rehabilitation'
+              description='Specialist, Physical medicine and Rehabilitation'
 
             />
           </Grid.Column>
@@ -60,20 +60,20 @@ const CardExampleCardProps = () => (
           <Grid.Column width={5}>
             <Card
               fluid
-              image={Ho2}
-              header='Elliot Baker'
-              meta='Friend'
-              description='Elliot is a sound engineer living in Nashville who enjoys playing guitar and hanging with his cat.'
+              image={D4}
+              header='Dr Amr Bannan'
+              meta='Cardiology'
+              description='Consultant, Cardiology Interventional Cardiology'
 
             />
           </Grid.Column>
           <Grid.Column width={5}>
             <Card
               fluid
-              image={Kfr}
-              header='Elliot Baker'
-              meta='Friend'
-              description='Elliot is a sound engineer living in Nashville who enjoys playing guitar and hanging with his cat.'
+              image={D5}
+              header='Dr Ibrahim Issa'
+              meta='ENT'
+              description='ENT Consultant'
 
             />
           </Grid.Column>
@@ -83,10 +83,10 @@ const CardExampleCardProps = () => (
           <Grid.Column width={5}>
             <Card
               fluid
-              image={SFH}
-              header='Elliot Baker'
-              meta='Friend'
-              description='Elliot is a sound engineer living in Nashville who enjoys playing guitar and hanging with his cat.'
+              image={D6}
+              header='Dr. Hani Moussalem'
+              meta='Vascular Surgery'
+              description='Consultant Vascular Surgery'
 
             />
           </Grid.Column>
@@ -94,10 +94,10 @@ const CardExampleCardProps = () => (
 
             <Card
               fluid
-              image={Ka}
-              header='Elliot Baker'
-              meta='Friend'
-              description='Elliot is a sound engineer living in Nashville who enjoys playing guitar and hanging with his cat.'
+              image={D7}
+              header='Dr.Abdulazziz S. Baazeem'
+              meta='AndorlogyUrology'
+              description='Consultant Urology & Andrology'
 
             />
           </Grid.Column>
@@ -108,10 +108,10 @@ const CardExampleCardProps = () => (
           <Grid.Column width={5}>
             <Card
               fluid
-              image={HG}
-              header='Elliot Baker'
-              meta='Friend'
-              description='Elliot is a sound engineer living in Nashville who enjoys playing guitar and hanging with his cat.'
+              image={D8}
+              header='Dr.Abdelkarim Khedhair'
+              meta='Plastic Surgery'
+              description='Associate Sr. Specialist, Plastic Surgery'
 
             />
           </Grid.Column>
@@ -119,10 +119,10 @@ const CardExampleCardProps = () => (
 
             <Card
               fluid
-              image={SG}
-              header='Elliot Baker'
-              meta='Friend'
-              description='Elliot is a sound engineer living in Nashville who enjoys playing guitar and hanging with his cat.'
+              image={D9}
+              header='Dr.Amany Mohammed Gouda'
+              meta='Family Medicine'
+              description='Consultant, Family medicine'
 
             />
           </Grid.Column>

@@ -27,6 +27,21 @@ export default class Home extends Component {
         <br />
         <br />
         <br />
+<p>
+<h1>Welcome</h1>
+<br/>
+<h2>Committed To Your Care since 2019</h2>
+<br/>
+<h3>We aim to provide you with a healthcare journey focused on your wellbeing.
+   Let us transform your lives through clinical excellence,<br/> compassionate care and health education</h3>
+</p>
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
         <Cards />
  
         <Footer />

@@ -8,35 +8,59 @@ export default class Footer extends Component {
             <div>
 
                 <footer className="footer1">
-                    <Container style={{ margin: '0 auto' }}>
-                        <Grid columns={2} divided reversed='mobile'>
+                    <Container >
+                        <Grid columns={3} divided reversed='mobile'>
                             <Grid.Row>
-                                <Grid.Column><div className="Contact">
+                                <Grid.Column size="large">
+                                    <div className="P">
                                     <ul>
-                                      <ol> <h2> Contact Us</h2> </ol> 
-                                        <br/>
-                                        <ol> Adress:Badir,Amanah Street ,Jeddah </ol>
-                                        <br/>
-                                        <ol> Phone: 00221133445 </ol>
-                                        <br/>
-                                        <ol> <a href=''>E-mail:emustashfa@mashfa.com</a> </ol>
+                                      
+                                            <p>
+                                                <h5> E-mustashfa.Care is beyond being a group of entities providing
+                                                 the full spectrum of healthcare services; it is a pioneering
+                                                 institution that has been continuously thriving for over four decades,
+                                                 to become the reference of excellence and international
+                                                 standards in KSA and the whole MENA region. </h5>
+                                            </p>
+                                
+
                                     </ul>
-                                </div></Grid.Column>
+                                </div>
+                                </Grid.Column>
+
+
+
+
+
+
+                                <Grid.Column>
+                                    <div className="Contact">
+                                        <ul>
+                                            <ol> <h2> Contact Us</h2> </ol>
+                                            <br />
+                                            <ol> Adress:Badir,Amanah Street ,Jeddah </ol>
+                                            <br />
+                                            <ol> Phone: 00221133445 </ol>
+                                            <br />
+                                            <ol> <a href=''>E-mail:emustashfa@mashfa.com</a> </ol>
+                                        </ul>
+                                    </div>
+                                </Grid.Column>
 
 
 
                                 <Grid.Column>
                                     <div className="Social">
                                         <ul>
-                                          <ol>  <h2>Social</h2></ol>
-                                          <br/>
-                                            <ol><a href=''> <Icon disabled name='facebook' size='big'/> </a></ol>
-                                            <br/>
-                                            <ol><a href=''> <Icon disabled name='twitter'   size='big'/> </a></ol>
-                                            <br/>
-                                            <ol><a href=''> <Icon disabled name='instagram'  size='big' /> </a></ol>
-                                            <br/>
-                                            <ol><a href=''> <Icon disabled name='youtube'  size='big' /> </a></ol>
+                                            <ol>  <h2>Social</h2></ol>
+                                            <br />
+                                            <ol><a href=''> <Icon disabled name='facebook' size='big' /> </a></ol>
+                                            <br />
+                                            <ol><a href=''> <Icon disabled name='twitter' size='big' /> </a></ol>
+                                            <br />
+                                            <ol><a href=''> <Icon disabled name='instagram' size='big' /> </a></ol>
+                                            <br />
+                                            <ol><a href=''> <Icon disabled name='youtube' size='big' /> </a></ol>
 
                                         </ul>
                                     </div>

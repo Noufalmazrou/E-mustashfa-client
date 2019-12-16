@@ -28,7 +28,7 @@ const CardExampleCardProps = () => (
           <Grid.Column width={5}>
             <Card
               fluid
-              image={D1}
+          
               header='Elliot Baker'
               meta='Friend'
               description='Elliot is a sound engineer living in Nashville who enjoys playing guitar and hanging with his cat.'
@@ -39,7 +39,7 @@ const CardExampleCardProps = () => (
 
             <Card
               fluid
-              image={D1}
+           
               header='Elliot Baker'
               meta='Friend'
               description='Elliot is a sound engineer living in Nashville who enjoys playing guitar and hanging with his cat.'
