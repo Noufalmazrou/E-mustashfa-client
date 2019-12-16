@@ -19,10 +19,7 @@ export default class Home extends Component {
 
         <Slidershow />
 
-        <br />
-        <br />
-        <br />
-        <br/>
+        <br/><br/><br/><br/>
         <Cards />
 
 
