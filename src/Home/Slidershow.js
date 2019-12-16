@@ -33,7 +33,7 @@ const Slidershow = () => {
 	]
 	return (
 		<div>
-			<Carousel
+			<Carousel className="slide"
 				elements={elements}
 				duration={5000}
 				animation='slide left'

@@ -1,6 +1,9 @@
 import React from 'react'
 import { Card, Icon ,Container } from 'semantic-ui-react'
 import D1 from '../img/D1.png'
+import Footer from '../Footer'
+import Slidershow from '../Home/Slidershow'
+
 
 const extra = (
   <a>
@@ -10,7 +13,9 @@ const extra = (
 )
 
 const CardExampleCardProps = () => (
-    <Container>
+  <div>
+<Slidershow/>
+
   <Card
     image={D1}
     header='Elliot Baker'
@@ -40,7 +45,10 @@ const CardExampleCardProps = () => (
     description='Elliot is a sound engineer living in Nashville who enjoys playing guitar and hanging with his cat.'
     extra={extra}
   />
-  </Container>
+<Footer/>
+
+</div>
+ 
 
 
 )
