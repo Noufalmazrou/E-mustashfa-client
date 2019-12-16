@@ -12,6 +12,7 @@ import Nav from './Home/Nav'
 import Hospital from './Appointments/Hospital'
 import Sections from './Appointments/Sections'
 import Doctors from './Appointments/Doctors'
+import Physicaltherapy from './Appointments/Physicaltherapy'
 
 
 
@@ -32,6 +33,7 @@ export class App extends Component {
           <Route path="/Hospital" component={() => <Hospital />} />
           <Route path="/Sections" component={() => <Sections />} />
           <Route path="/Doctors" component={() => <Doctors />} />
+          <Route path="/Physicaltherapy" component={() => <Physicaltherapy />} />
 
         </Switch>
       </BrowserRouter>

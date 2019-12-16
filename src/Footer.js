@@ -13,8 +13,8 @@ export default class Footer extends Component {
                             <Grid.Row>
                                 <Grid.Column size="large">
                                     <div className="P">
-                                    <ul>
-                                      
+                                        <ul>
+
                                             <p>
                                                 <h5> E-mustashfa.Care is beyond being a group of entities providing
                                                  the full spectrum of healthcare services; it is a pioneering
@@ -22,10 +22,10 @@ export default class Footer extends Component {
                                                  to become the reference of excellence and international
                                                  standards in KSA and the whole MENA region. </h5>
                                             </p>
-                                
 
-                                    </ul>
-                                </div>
+
+                                        </ul>
+                                    </div>
                                 </Grid.Column>
 
 

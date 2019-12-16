@@ -16,8 +16,9 @@ const Cards = () => (
         <Grid.Row columns={2}>
           <Grid.Column width={8}>
             <Card
-              fluid
+              fluid 
               image={M10} className="M" 
+            
               href='#Medical Records'
               header='Medical Records '
               description='Records of the patients.'
