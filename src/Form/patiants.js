@@ -18,7 +18,7 @@ class FormExampleSubcomponentControl extends Component {
     }
     submit = (e)=>{
       e.preventDefault()
-    axios.post('http://localhost:', this.state)
+    axios.post('http://localhost:4000/user/register', this.state)
     .then(res =>
        console.log(res))
     .catch(err => console.log(err))
@@ -31,33 +31,38 @@ class FormExampleSubcomponentControl extends Component {
 
     const { value } = this.state
     return (
-      <Form onSubmit = {this.submit} action='http://locahost:5100/user' method="post">
+      <Form onSubmit = {this.submit} action='http://localhost:4000/user/reigester' method="post">
         <Form.Group widths='equal'>
-          <Form.Input fluid label='First name' placeholder='First name' onChange={this.onChange} />
-          <Form.Input fluid label='Last name' placeholder='Last name' onChange={this.onChange} />
+          <Form.Input fluid name='firstname' label='First name' placeholder='First name' onChange={this.onChange} />
+          <Form.Input fluid name='lastname' label='Last name' placeholder='Last name' onChange={this.onChange} />
           <Form.Select
             fluid
             label='Gender'
             options={options}
             placeholder='Gender'
             onChange={this.onChange}
-          />
+          /> </Form.Group>
+          <Form.Group unstackable widths={2}>
+
+         <Form.Input name='email' label='Email' placeholder='email' onChange={this.onChange} />
+         <Form.Input name='password' label='Password' type='password' placeholder='password' onChange={this.onChange} />
+      </Form.Group>
           
-        </Form.Group>
+
         <Form.Group unstackable widths={2}>
-       <Form.Input label='Wieght' placeholder='wieght' onChange={this.onChange} />
-       <Form.Input label='Hight' placeholder='hight' onChange={this.onChange} />
+       <Form.Input name='weight' label='Wieght' placeholder='wieght' onChange={this.onChange} />
+       <Form.Input name='height' label='Hight' placeholder='hight' onChange={this.onChange} />
     </Form.Group>
 
     <Form.Group unstackable widths={2}>
-       <Form.Input label='Desises' placeholder='Desises' onChange={this.onChange} />
-       <Form.Input label='Nationality' placeholder='Nationality' onChange={this.onChange} />
+       <Form.Input name='' label='Desises' placeholder='Desises' onChange={this.onChange} />
+       <Form.Input name='nationality' label='Nationality' placeholder='Nationality' onChange={this.onChange} />
     </Form.Group>
     <Form>
     <Form.Group inline>
       <Form.Field>
         <label>Phone Number</label>
-        <Input placeholder='(xxx)' onChange={this.onChange} />
+        <Input name='phoneNumber' placeholder='(xxx)' onChange={this.onChange} />
       </Form.Field>
     </Form.Group>
   </Form>
@@ -65,7 +70,7 @@ class FormExampleSubcomponentControl extends Component {
     <Form.Group inline>
       <Form.Field>
         <label>Emergance Phone Number</label>
-        <Input placeholder='(xxx)' onChange={this.onChange} />
+        <Input name='emergencyPhone' placeholder='(xxx)' onChange={this.onChange} />
       </Form.Field>
     </Form.Group>
   </Form>
