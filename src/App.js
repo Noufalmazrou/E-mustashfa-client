@@ -9,7 +9,9 @@ import Home from './Home/Home'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Patiants from './Form/patiants'
 import Nav from './Home/Nav'
+import Upload from './uploading/Upload'
 import Changepass from './Register/Changepass'
+
 
 
 
@@ -26,6 +28,8 @@ export class App extends Component {
             <Route path="/signin" component={ ()=> <Signin />} />
             <Route path="/signup" component={ ()=> <Signup />} />
             <Route path="/patiants" component={ ()=> <Patiants/>} />
+            {/* You can delete this VVV */}
+            <Route path="/upload" component={ ()=> <Upload/>} /> 
             <Route path="/Changepass" component={ ()=> <Changepass/>} />
 
           </Switch>
