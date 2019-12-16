@@ -7,7 +7,7 @@ import M6 from '../img/M6.jpeg'
 import M10 from '../img/M10.jpg'
 
 const Cards = () => (
-  <Container widht={768} >
+  <Container width={768} >
  
 
 
@@ -61,7 +61,7 @@ const Cards = () => (
         </Grid.Row>
       </Grid>
     </Card.Group>
-    {/* </div> */}
+
 
   </Container>
 )

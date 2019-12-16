@@ -13,10 +13,12 @@ export default class Footer extends Component {
                             <Grid.Row>
                                 <Grid.Column><div className="Contact">
                                     <ul>
-                                        <h2> Contact Us</h2>
+                                      <ol> <h2> Contact Us</h2> </ol> 
                                         <br/>
                                         <ol> Adress:Badir,Amanah Street ,Jeddah </ol>
+                                        <br/>
                                         <ol> Phone: 00221133445 </ol>
+                                        <br/>
                                         <ol> <a href=''>E-mail:emustashfa@mashfa.com</a> </ol>
                                     </ul>
                                 </div></Grid.Column>
@@ -29,8 +31,11 @@ export default class Footer extends Component {
                                           <ol>  <h2>Social</h2></ol>
                                           <br/>
                                             <ol><a href=''> <Icon disabled name='facebook' size='big'/> </a></ol>
+                                            <br/>
                                             <ol><a href=''> <Icon disabled name='twitter'   size='big'/> </a></ol>
+                                            <br/>
                                             <ol><a href=''> <Icon disabled name='instagram'  size='big' /> </a></ol>
+                                            <br/>
                                             <ol><a href=''> <Icon disabled name='youtube'  size='big' /> </a></ol>
 
                                         </ul>

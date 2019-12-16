@@ -24,8 +24,8 @@ export default class Nav extends Component {
             onClick={this.handleItemClick}
           />
           <Menu.Item
-            name='Services'
-            active={activeItem === 'Services'}
+            name=' Medical Services'
+            active={activeItem === ' Medical Services'}
             onClick={this.handleItemClick}
           />
           <Menu.Menu position='right'>
