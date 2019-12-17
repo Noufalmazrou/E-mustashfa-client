@@ -13,14 +13,8 @@ import Rays from './Home/Rays'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Patiants from './Form/patiants'
 import Nav from './Home/Nav'
-<<<<<<< HEAD
-import Surgries from './Surgries.js'
-import Diseases from './Diseases'
-import Medical from './Medical'
-=======
 import Upload from './uploading/Upload'
 import Changepass from './Register/Changepass'
->>>>>>> 5adf0e6d8581e9c1d0ff763dc2d189ef10de8695
 
 
 export class App extends Component {
@@ -40,18 +34,10 @@ export class App extends Component {
             <Route path="/tests" component={ ()=> <Tests/>} />
             <Route path="/rays" component={ ()=> <Rays/>} />
             <Route path="/drugs" component={ ()=> <Drugs/>} />
-<<<<<<< HEAD
-            <Route path="/surgries" component={ ()=> <Surgries/>} />
-            <Route path="/diseases" component={ ()=> <Diseases/>} />
-            <Route path="/medical" component={ ()=> <Medical/>} />
-
-
-=======
             <Route path="/patiants" component={ ()=> <Patiants/>} />
             {/* You can delete this VVV */}
             <Route path="/upload" component={ ()=> <Upload/>} /> 
             <Route path="/Changepass" component={ ()=> <Changepass/>} />
->>>>>>> 5adf0e6d8581e9c1d0ff763dc2d189ef10de8695
 
           </Switch>
         </BrowserRouter>

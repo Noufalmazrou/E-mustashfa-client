@@ -50,7 +50,7 @@ export default class Upload extends Component {
         return (
             <div>
                 
-                <input className="uplading" type="file" name="files" id="" onChange={this.FileSelectedHandler}/>
+                <input className="uplading" type="file" name="files"  onChange={this.FileSelectedHandler}/>
                 <button onClick={()=>this.fileUploadHandler()}>Submit</button>
                 <button onClick={()=>console.log(this.state.img_url)
                 } >Print</button>
