@@ -9,7 +9,9 @@ export default class Nav extends Component {
     state = { activeItem: 'home' }
 
     handleItemClick = (e, { name }) => this.setState({ activeItem: name })
-  
+    logout =()=>{
+      localStorage.removeItem("usertoken");
+    }
     render() {
       const { activeItem } = this.state
   
@@ -36,6 +38,7 @@ export default class Nav extends Component {
             <Menu.Item>
               <Input icon='search' placeholder='Search...' />
             </Menu.Item>
+            {!localStorage.usertoken? <>
             <Menu.Item
              as ={Link} to ='/signin'
               name='Signin'
@@ -49,9 +52,22 @@ export default class Nav extends Component {
               active={activeItem === 'Signup'}
               onClick={this.handleItemClick}
             />
-            
+            </>
+            : <>   <Menu.Item
+             
+              name='Logout'
+              active={activeItem === 'Logout'}
+              onClick={this.logout}
+            />
+
+            <Menu.Item
+            as ={Link} to ='/changePassword'
+              name='Change password'
+              active={activeItem === 'Change password'}
+              onClick={this.handleItemClick}
+            /></>}
           </Menu.Menu>
-          
+            
         </Menu>
             </div>
         )
