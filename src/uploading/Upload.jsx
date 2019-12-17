@@ -33,6 +33,7 @@ export default class Upload extends Component {
           this.setState({
             img_url: url
           })
+
           this.props.getUrl(url)
         })
       })
@@ -45,7 +46,6 @@ export default class Upload extends Component {
       })
       console.log(this.state.uploded_img);
       console.log(img);
-
     }
   }
   render() {
