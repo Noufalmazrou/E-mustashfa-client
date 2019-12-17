@@ -27,28 +27,28 @@ export class App extends Component {
   render() {
     return (
 
-        <BrowserRouter>
-     
-         <Nav/>
-         
-          <Switch>
-            <Route path="/Home" component={ ()=> <Home/>} />
-            <Route path="/AboutUs" component={ ()=> <AboutUs/>} />
-            <Route path="/Reservations" component={ ()=> <Reservations/>} />
-            <Route path="/signin" component={ ()=> <Signin />} />
-            <Route path="/signup" component={ ()=> <Signup />} />
-            <Route path="/medicalrecords" render={ ()=> <Medicalrecords/>} />
-            <Route path="/tests" component={ ()=> <Tests/>} />
-            <Route path="/rays" component={ ()=> <Rays/>} />
-            <Route path="/drugs" component={ ()=> <Drugs/>} />
-            <Route path="/patiants" component={ ()=> <Patiants/>} />
-            {/* You can delete this VVV */}
-            <Route path="/upload" component={ ()=> <Upload/>} /> 
-            <Route path="/Changepass" component={ ()=> <Changepass/>} />
 
+      <BrowserRouter>
+        <Nav />
+        <Switch>
+          <Route path="/Home" component={() => <Home />} />
+          <Route path="/AboutUs" component={() => <AboutUs />} />
+          <Route path="/Reservations" component={() => <Reservations />} />
+          <Route path="/signin" component={() => <Signin />} />
+          <Route path="/signup" component={() => <Signup />} />
+          <Route path="/medicalrecords" render={() => <Medicalrecords />} />
+          <Route path="/tests" component={() => <Tests />} />
+          <Route path="/rays" component={() => <Rays />} />
+          <Route path="/drugs" component={() => <Drugs />} />
+          <Route path="/patiants" component={() => <Patiants />} />
+          {/* You can delete this VVV */}
+          <Route path="/upload" component={() => <Upload />} />
+          <Route path="/Changepass" component={() => <Changepass />} />
+          <Route path="/Upload" component={() => <Upload />} />
+        </Switch>
+      </BrowserRouter>
 
-          </Switch>
-        </BrowserRouter>
+      
 
     )
   }
