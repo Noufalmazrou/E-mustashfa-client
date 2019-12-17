@@ -213,13 +213,15 @@ margin-left:40%
 }
 
 .uplading{
- margin-left: 45%;
+ margin: 0% auto;
  height: 400px;
+ text-align: center;
  width: 100%;
 }
 .submit{
 width: 5.3%;
 margin-left: 45%;
+font-size: large;
 }
 
 .print{
@@ -227,3 +229,4 @@ margin-left: 45%;
   margin-left: 45%;
 
 }
+

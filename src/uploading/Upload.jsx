@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { storage } from './config'
-import { Segment,Icon ,Button ,Header } from 'semantic-ui-react'
+import { Segment, Icon, Button, Header } from 'semantic-ui-react'
 
 //you have to pass a function in props named getUrl to retrive the link 
 export default class Upload extends Component {
@@ -52,11 +52,17 @@ export default class Upload extends Component {
     return (
       <div>
         <Segment placeholder>
-          <Header icon>
-            <Icon name='pdf file outline' />
-          </Header>
-          <input className="uplading" type="file" name="files" id="" onChange={this.FileSelectedHandler} />
-          <button  className="submit" onClick={() => this.fileUploadHandler()}>Submit</button>
+
+          <button >
+<br/>
+            <Header icon size='large' className="pdf">
+              <Icon name='pdf file outline' />
+<br/>
+              <center>  <input icon size='large' className="uplading" type="file" name="files" id="" onChange={this.FileSelectedHandler} /></center>
+            </Header>
+          </button>
+
+          <button className="submit" onClick={() => this.fileUploadHandler()}>Submit</button>
 
         </Segment>
 
