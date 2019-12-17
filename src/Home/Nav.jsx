@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Input, Menu, Container } from 'semantic-ui-react'
 import "semantic-ui-css/semantic.min.css"
+import '../App.css';
 
 
 
@@ -14,9 +15,9 @@ export default class Nav extends Component {
   
    
         return (
-            <div>
-                
-        <Menu secondary>
+            <div >
+        <Container className="n1">
+        <Menu secondary  size='huge'>
           <Menu.Item name='home' active={activeItem === 'home'} onClick={this.handleItemClick} />
           <Menu.Item
             name='About us'
@@ -28,7 +29,7 @@ export default class Nav extends Component {
             active={activeItem === ' Medical Services'}
             onClick={this.handleItemClick}
           />
-          <Menu.Menu position='right'>
+          <Menu.Menu position='right' >
             <Menu.Item>
               <Input icon='search' placeholder='Search...' />
             </Menu.Item>
@@ -45,6 +46,7 @@ export default class Nav extends Component {
             />
           </Menu.Menu>
         </Menu>
+        </Container>
             </div>
         )
     }
