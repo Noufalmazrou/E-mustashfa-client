@@ -208,8 +208,11 @@ margin-left:40%
 }
 
 .a{
-  background-color: rgb(243, 243, 243);
-
+  background-color:#57afbe;
+  font-style: oblique;
+  padding : 5%;
+  border-radius: 2%;
+  color:white;
 }
 
 .uplading{
