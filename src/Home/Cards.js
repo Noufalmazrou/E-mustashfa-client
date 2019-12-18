@@ -6,6 +6,7 @@ import M4 from '../img/M4.jpg'
 import M6 from '../img/M6.jpeg'
 import M10 from '../img/M10.jpg'
 import { Link } from 'react-router-dom/cjs/react-router-dom.min'
+import M2 from '../img/M2.png'
 
 
 const Cards = () => (
@@ -19,9 +20,9 @@ const Cards = () => (
           <Grid.Column width={8}>
             <Card
               fluid 
-              image={M10} className="M" 
+              image={M2} className="M" 
             
-              href='#Medical Records'
+              href='Medical Records'
               header='Medical Records '
               description='Records of the patients.'
               as ={Link} to ='/medicalrecords'
@@ -36,7 +37,9 @@ const Cards = () => (
             
               fluid
               image={M4}
-              href='#Rays'
+
+              href='Rays'
+
               header='Rays'
               description='Rays of the patient.'
               as ={Link} to ='/rays'
@@ -50,7 +53,7 @@ const Cards = () => (
             <Card
               fluid
               image={M3}
-              href='#Tests'
+              href='Tests'
               header='Tests'
               description='Test.'
               as ={Link} to ='/tests'
@@ -62,7 +65,7 @@ const Cards = () => (
             <Card
               fluid
               image={M6}
-              href='#Drugs'
+              href='Drugs'
               header='Drugs'
               description='Drugs.'
               as ={Link} to ='/drugs'

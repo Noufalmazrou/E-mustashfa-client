@@ -232,8 +232,11 @@ margin-left:40%
 }
 
 .a{
-  background-color: rgb(243, 243, 243);
-
+  background-color:#57afbe;
+  font-style: oblique;
+  padding : 5%;
+  border-radius: 2%;
+  color:white;
 }
 
 .uplading{
@@ -268,4 +271,42 @@ font-size: large;
   text-align: center;
 }
 
+.about{
+  background-color:#57afbe;
+  font-style: oblique;
+  padding : 5%;
+  border-radius: 2%;
+  color:white;
+}
+.about>h2{
+  font-size: 30px;
+  text-align: center;
+  padding-bottom: 30px;
+  
+}
+
+.mission{
+  background-color:#57afbe;
+  font-style: oblique;
+  padding : 5%;
+  border-radius: 2%;
+  color:white;
+}
+
+.signup{
+
+  background-color:#57afbe;
+  font-style: oblique;
+  padding : 5%;
+  border-radius: 2%;
+  color:white;
+}
+
+
+.em{
+  height: 50%;
+  width:100%;
+
+
+}
 
