@@ -257,9 +257,11 @@ font-size: large;
 
 .signup{
 
-  margin-top:10%;
-border-style: ;
-border-color:black;
+  background-color:#57afbe;
+  font-style: oblique;
+  padding : 5%;
+  border-radius: 2%;
+  color:white;
 }
 
 

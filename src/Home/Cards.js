@@ -19,7 +19,7 @@ const Cards = () => (
               fluid 
               image={M2} className="M" 
             
-              href='#Medical Records'
+              href='Medical Records'
               header='Medical Records '
               description='Records of the patients.'
             />
@@ -31,7 +31,7 @@ const Cards = () => (
             <Card
               fluid
               image={M4}
-              href='#Rays'
+              href='Rays'
               header='Rays'
               description='Rays of the patient.'
             />
@@ -44,7 +44,7 @@ const Cards = () => (
             <Card
               fluid
               image={M3}
-              href='#Tests'
+              href='Tests'
               header='Tests'
               description='Test.'
             />
@@ -54,7 +54,7 @@ const Cards = () => (
             <Card
               fluid
               image={M6}
-              href='#Drugs'
+              href='Drugs'
               header='Drugs'
               description='Drugs.'
             />
