@@ -31,7 +31,7 @@ export class App extends Component {
       <BrowserRouter>
         <Nav />
         <Switch>
-          <Route path="/Home" component={() => <Home />} />
+          <Route exact path="/" component={() => <Home />} />
           <Route path="/AboutUs" component={() => <AboutUs />} />
           <Route path="/Reservations" component={() => <Reservations />} />
           <Route path="/signin" component={() => <Signin />} />
