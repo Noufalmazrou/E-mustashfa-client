@@ -5,6 +5,8 @@ import M3 from '../img/M3.jpeg'
 import M4 from '../img/M4.jpg'
 import M6 from '../img/M6.jpeg'
 import M10 from '../img/M10.jpg'
+import { Link } from 'react-router-dom/cjs/react-router-dom.min'
+
 
 const Cards = () => (
   <Container width={768} >
@@ -22,6 +24,8 @@ const Cards = () => (
               href='#Medical Records'
               header='Medical Records '
               description='Records of the patients.'
+              as ={Link} to ='/medicalrecords'
+
             />
 
           </Grid.Column >
@@ -29,11 +33,13 @@ const Cards = () => (
           <Grid.Column width={8} >
 
             <Card
+            
               fluid
               image={M4}
               href='#Rays'
               header='Rays'
               description='Rays of the patient.'
+              as ={Link} to ='/rays'
             />
 
           </Grid.Column >
@@ -47,6 +53,8 @@ const Cards = () => (
               href='#Tests'
               header='Tests'
               description='Test.'
+              as ={Link} to ='/tests'
+
             />
 
           </Grid.Column  >
@@ -57,6 +65,8 @@ const Cards = () => (
               href='#Drugs'
               header='Drugs'
               description='Drugs.'
+              as ={Link} to ='/drugs'
+
             />
           </Grid.Column>
         </Grid.Row>

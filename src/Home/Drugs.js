@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Divider, Form, Label, ButtonOr, Button } from 'semantic-ui-react'
+import { Divider, Form, Label, ButtonOr, Button, Menu, Input } from 'semantic-ui-react'
 import "semantic-ui-css/semantic.min.css"
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
@@ -9,14 +9,20 @@ import CardsForDrugs from '../CardsForDrugs';
 import { BrowserRouter, Route, Switch } from 'react-router-dom/cjs/react-router-dom';
 import EditItem from '../EditItem';
 export class Drugs extends Component {
-
-
   state={
     userId : '',
     drug:[],
     startDate: new Date(),
-    endDate: new Date()  
+    endDate: new Date(),
+    search: '',
+
   }
+  updateSearch =({target:{value , name}})=>{
+  
+    this.setState({[name]: value});
+   
+  }
+  ;
   componentDidMount(){
     axios.get('http://localhost:4000/file',{
       headers: {
@@ -48,12 +54,15 @@ export class Drugs extends Component {
     name: this.state.Drugname,
     duration: this.state.Duration,
     date: this.state.startDate,
+    
 
   }).then(res =>{
 console.log(res)
   }).catch(err=>console.log(err))
   // window.location.reload();
   alert("nice you have been add the mirgwana")
+  window.location.reload();
+
 }
       updateSearch =({target:{value , name}})=>{
     
@@ -65,36 +74,32 @@ console.log(res)
           startDate: date,
         });
       };
-      
-    
-    //   handleChange = date => {
-    //     this.setState({
-    //       endDate: date
-    //     });
-    //   };
     render() {
+      let filteredDrugs = this.state.drug.filter(
+        (item) => {
+          return item.name.toLowerCase().indexOf(this.state.search.toLowerCase()) !== -1;
+        }
+  
+      );
       console.log(this.state);
-      var drugs = this.state.drug.map( item => {
+      var drugs = filteredDrugs.map( item => {
     
         return <CardsForDrugs name={item.name} dose={item.dose} duration={item.duration} date={item.date} drugid={item.id}/>
       
       })
       
         return (
-          
+          <div>
             <div>
               <BrowserRouter>
-              <Switch>
-              {/* <Route path="drugs/:id" render={ (props)=> <EditItem {...props}  drugsData={ this.state.drug.length == 0?   0 : this.state.drug.filter(ele =>{
-        return  props.match.params.id == ele.drugid            
-          }) }/>} /> */}
+              <Switch>         
           <Route path="/drugs/:id"  component = {EditItem}/>
-          {/* <Route path="/drugs/:id"  component={EditItem} /> */}
 
           </Switch>
-          </BrowserRouter>
-              
-    <div>
+          </BrowserRouter> 
+          </div>    
+    <div className= "form">
+      <div>
     <h6>How long have you been taking this drug</h6>
   <DatePicker name= "From" onChange={this.updateSearch}
         selected={this.state.startDate}
@@ -125,10 +130,24 @@ To
     <Divider />    
     <Button onClick={this.onSubmit}>submit</Button>
   </Form>
-  
+  <br/>
+  </div>
+  <Menu.Item>
+              <Input type= "text" name="search" icon='search' placeholder='Search...'
+              onChange={this.updateSearch} 
+              />
+            </Menu.Item>
+  {/* <div className = "search">
+      <input type= "text" 
+      name="search"
+      onChange={this.updateSearch}
+      />
+      </div> */}
   <div className= "app">
+    
 {drugs}
 </div>
+
  </div>
         )
     }

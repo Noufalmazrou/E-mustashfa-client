@@ -253,5 +253,19 @@ font-size: large;
   margin-left: 45%;
 
 }
+/* .form{
+ 
+
+    width: 1000px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 9%  
+
+} */
+.form{
+  text-align: center;
+}
 
 
