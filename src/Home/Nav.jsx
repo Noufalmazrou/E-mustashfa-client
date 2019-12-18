@@ -38,7 +38,18 @@ export default class Nav extends Component {
           
             onClick={this.handleItemClick}
           />
+
+          <Menu.Item
+          as ={Link} to ='/Appointment'
+
+            name='Appointment'
+            active={activeItem === 'Appointment'}
+            onClick={this.handleItemClick}
+          />
+          <Menu.Menu position='right'>
+
           <Menu.Menu position='right' >
+
             <Menu.Item>
               <Input icon='search' placeholder='Search...' />
             </Menu.Item>

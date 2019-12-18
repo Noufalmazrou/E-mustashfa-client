@@ -1,7 +1,13 @@
+
+.App {
+  text-align: center;
+}
+
 body {
   -webkit-font-smoothing: antialiased;
   -moz-font-smoothing: grayscale;
   background-color:rgb(55, 149, 204);
+
 }
 
 .ui.inverted.segment {
@@ -138,6 +144,24 @@ p code {
   }
 }
 
+.app{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 50px 0px 50px 40px;
+  grid-gap: 20px 20px;
+  opacity: .8;
+}
+.Edit{
+  color:white;
+  background-color: green
+}
+.Delete{
+  color:white;
+  background-color: red
+}
+
+
+
 .slick-dots {
   bottom: 15px;
 }
@@ -229,4 +253,5 @@ font-size: large;
   margin-left: 45%;
 
 }
+
 
