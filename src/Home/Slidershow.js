@@ -27,11 +27,11 @@ const Slidershow = () => {
 			}
 		},
 
-		{
-			render: () => {
-				return <Button fluid > <img src={s2} /></Button>
-			}
-		},
+		// {
+		// 	render: () => {
+		// 		return <Button fluid > <img src={s2} /></Button>
+		// 	}
+		// },
 
 		{
 			render: () => {

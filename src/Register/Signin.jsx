@@ -66,6 +66,9 @@ import SweetAlert from 'sweetalert2-react';
   render() {
     console.log(this.state)
     return (
+
+      <Container className="signup" >
+
       // <>{ this.state.wrong &&
       //   ['danger'].map((variant, idx) => (
       //    <Alert key={idx} variant={variant}>
@@ -81,6 +84,7 @@ import SweetAlert from 'sweetalert2-react';
       this.props.history.push('/home')
       }} />
      
+
       <Container fluid >
         
       <div fluid>
@@ -105,7 +109,12 @@ import SweetAlert from 'sweetalert2-react';
   </Form>
         </div>
         </Container>
+
+        </Container>
+     
+
      </>
+
     )
   }
 }

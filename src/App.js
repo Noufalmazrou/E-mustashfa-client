@@ -20,18 +20,24 @@ import EditItem from "./EditItem";
 import Surgries from './Surgries.js'
 import Diseases from './Diseases'
 import Medical from './Medical'
-
-
+import Footer from './Footer'
 
 
 export class App extends Component {
+ 
+
   render() {
     return (
+     
+        
+  
+        
+
         <BrowserRouter>
          <Nav/>
           <Switch>
       
-      
+
             <Route exact path="/" component={ ()=> <Home/>} />
             <Route path="/AboutUs" component={ ()=> <AboutUs/>} />
             <Route path="/Reservations" component={ ()=> <Reservations/>} />
@@ -50,6 +56,9 @@ export class App extends Component {
             <Route path="/appointment" component={ ()=> <Appointment/>} />            
           </Switch>
         </BrowserRouter>
+     <div className='violet'>
+        <Footer />
+        </div>
 
     )
   }
