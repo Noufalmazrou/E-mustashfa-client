@@ -48,7 +48,7 @@ export default class Nav extends Component {
           />
           <Menu.Menu position='right'>
 
-          <Menu.Menu position='right' >
+          <Menu.Menu position='right' />
 
             <Menu.Item>
               <Input icon='search' placeholder='Search...' />

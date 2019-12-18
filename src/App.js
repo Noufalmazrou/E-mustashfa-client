@@ -32,7 +32,7 @@ export class App extends Component {
          
           <Switch>
             
-            <Route path="/Home" component={ ()=> <Home/>} />
+            <Route exact path="/" component={ ()=> <Home/>} />
             <Route path="/AboutUs" component={ ()=> <AboutUs/>} />
             <Route path="/Reservations" component={ ()=> <Reservations/>} />
             <Route path="/signin" component={ ()=> <Signin />} />
@@ -44,7 +44,7 @@ export class App extends Component {
             <Route path="/patiants" component={ ()=> <Patiants/>} />
             {/* You can delete this VVV */}
             <Route path="/upload" component={ ()=> <Upload/>} /> 
-            <Route path="/Changepass" component={ ()=> <Changepass/>} />
+            <Route path="/changePassword" component={ ()=> <Changepass/>} />
             <Route path="/appointment" component={ ()=> <Appointment/>} />            
           </Switch>
         </BrowserRouter>
