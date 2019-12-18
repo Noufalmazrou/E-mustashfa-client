@@ -231,16 +231,25 @@ font-size: large;
 }
 
 .about{
-  background-color:rgb(223, 219, 219);
+  background-color:#57afbe;
   font-style: oblique;
-
+  padding : 5%;
+  border-radius: 2%;
+  color:white;
+}
+.about>h2{
+  font-size: 30px;
+  text-align: center;
+  padding-bottom: 30px;
+  
 }
 
 .mission{
-  background-color:rgb(223, 219, 219);
+  background-color:#57afbe;
   font-style: oblique;
- 
-
+  padding : 5%;
+  border-radius: 2%;
+  color:white;
 }
 
 .signup{
@@ -248,4 +257,12 @@ font-size: large;
   margin-top:10%;
 border-style: ;
 border-color:black;
+}
+
+
+.em{
+  height: 50%;
+  width:100%;
+
+
 }

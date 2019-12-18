@@ -6,28 +6,29 @@ import mission from '../img/mission.jpg'
 
 
 const GridExampleCelledInternally = () => (
-
-  <div>
-
-    <Header>
-
-      <img src={emu} style={{ height: '600px', width: '100%' }} />
-    </Header>
+<div>
     <Container >
 
-      <p> <center> <h2 className="about ">
-        <br />
-        <h2>About Us</h2>
+    <img src={emu}  className="em" />
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+      <p>  <h2 className="about ">
         <br />
 
-        We will help to find health, to everyone.
-     The optimum ratio of price and quality responsible and conscientious approach
-     On the basis of the medical center “Nordis” can be given a thorough examination of the body
-     and get the advice of highly qualified specialists in various fields of medicine. According to studies,
-     our doctors will make an individual program of prevention and treatment of identified diseases, directed to a surgical treatment if necessary.
-     In today’s operational department conducted a wide range of operations under local and general anesthesia.   <br />
-</h2></center></p>
-   
+        <h2>About Us</h2>
+
+
+        We will help to find health , to everyone.
+       The optimum ratio of price and quality responsible and conscientious approach
+       On the basis of the medical center “Nordis” can be given a thorough examination of the body
+       and get the advice of highly qualified specialists in various fields of medicine. According to studies ,
+       our doctors will make an individual program of prevention and treatment of identified diseases, directed to a surgical treatment if necessary.
+       In today’s operational department conducted a wide range of operations under local and general anesthesia .
+</h2></p>
+
     </Container>
     <br />    <br />      <br />    <br />      <br />    <br />      <br />    <br />
     <Container>
