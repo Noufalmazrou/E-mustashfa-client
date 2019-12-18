@@ -7,6 +7,7 @@ import Swal from 'sweetalert2'
 import './Signup.css'
 
 
+
 const options = [
     { key: 'm', text: 'Male', value: 'male' ,   id : "male"},
     { key: 'f', text: 'Female', value: 'female' , id : "female" },
@@ -40,8 +41,11 @@ export default class Signup extends Component {
       .then(res =>
         console.log(res))
       .catch(err => console.log(err))
+
+    Swal.fire('Successfuly')
     Swal.fire('Regster')
      this.props.history.push('/home')
+
 
   }else{console.log('you are an idiot just do it good ');
   }}
@@ -49,6 +53,17 @@ export default class Signup extends Component {
     console.log(this.state)
 const { value } = this.state
     return (
+
+
+      
+      <Container className="signup" >
+        <Form onSubmit={this.submit} action='http://locahost:5100/auth/register' method="post">
+          <Form.Field>
+            <input type='text' placeholder='First name' name="first_name" onChange={this.onChange} />
+            {this.state.first_namelable && <Label pointing>Please enter a value</Label>}
+          </Form.Field>
+          <Divider />
+
       <div className="formup">
          <Form onSubmit = {this.submit} action='http://localhost:4000/user/register' method="post">
         <Form.Group widths='equal'>
@@ -90,6 +105,7 @@ const { value } = this.state
 
 
 
+
           <Form.Field inline>
             {false && <Label pointing='right'>Your password must be 6 characters or more</Label>}
             <input type='password' placeholder='Password' name="password" onChange={this.onChange}    
@@ -100,6 +116,21 @@ const { value } = this.state
             <input type='password' placeholder='Verify password' name="verifyPassword" onChange={this.onChange}  />
           </Form.Field>
 
+
+
+          <Button type='submit'>Submit</Button>
+
+
+
+
+        </Form>
+
+
+
+
+
+      </Container>
+
            <Form.TextArea label='About' placeholder='Tell us more about you...' />
         <Form.Checkbox label='I agree to the Terms and Conditions' />
         <Form.Button>Sign up!</Form.Button>
@@ -109,6 +140,7 @@ const { value } = this.state
       </Form>
         
       </div>
+
     )
   }
 }

@@ -1,13 +1,14 @@
 import React, { Component, Row, Col } from 'react'
 import { Input, Menu, Container, Grid, Icon } from 'semantic-ui-react'
 import App from './App'
+import Y from './img/Yassed.png'
 
 export default class Footer extends Component {
     render() {
         return (
             <div>
 
-                <footer className="footer1">
+                <footer className="footer1" id="footer">
                     <Container >
                         <Grid columns={3} divided reversed='mobile'>
                             <Grid.Row>
@@ -67,10 +68,16 @@ export default class Footer extends Component {
                                 </Grid.Column>
 
                             </Grid.Row>
-                            <Grid.Row>
-                                <Grid.Column className="u"> 2019 Dony by general Assembly studdents</Grid.Column>
-                            </Grid.Row>
+
                         </Grid>
+                        <br />
+                        <br />
+                        <Grid.Row>
+
+                            <Grid.Column className="u">  {'Copyright © '} Dag& Diala & Nouf & Yazzed <img src={Y} style={{ height: '30px'}} /></Grid.Column>
+
+                        </Grid.Row>
+                        <br />
                     </Container>
                 </footer>
             </div>
