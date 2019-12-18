@@ -45,7 +45,7 @@ export default class Signup extends Component {
       .then(res =>
         console.log(res))
       .catch(err => console.log(err))
-    Swal.fire('Regster')=
+    Swal.fire('Successfuly')
     
   }else{console.log('you are an idiot just do it good ');
   }}

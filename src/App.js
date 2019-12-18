@@ -18,12 +18,13 @@ import Changepass from './Register/Changepass'
 import Surgries from './Surgries.js'
 import Diseases from './Diseases'
 import Medical from './Medical'
-
-
+import Footer from './Footer'
 
 
 
 export class App extends Component {
+ 
+
   render() {
     return (
 
@@ -44,8 +45,15 @@ export class App extends Component {
           {/* You can delete this VVV */}
           <Route path="/upload" component={() => <Upload />} />
           <Route path="/Changepass" component={() => <Changepass />} />
-          <Route path="/Upload" component={() => <Upload />} />
+          <Route path="/" component={() => <Home />} />
+
         </Switch>
+        
+        <div className='violet'>
+        <Footer />
+        </div>
+        
+        
       </BrowserRouter>
 
       
