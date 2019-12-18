@@ -27,6 +27,8 @@ export class EditItem extends Component {
         }).catch(err=>console.log(err))
         // window.location.reload();
         alert("nice you have been add the mirgwana")
+        this.props.history.push('/drugs')
+
       }
       updateSearch =({target:{value , name}})=>{
     

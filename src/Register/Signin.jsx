@@ -51,7 +51,7 @@ import SweetAlert from 'sweetalert2-react';
     
         this.setState({wrong : true})
       }else {
-    console.log("nouf is log in ");
+    console.log("nouf is logged in ");
     
     localStorage.setItem('usertoken' , res.data)
       this.setState({show : true})
@@ -78,7 +78,7 @@ import SweetAlert from 'sweetalert2-react';
       <SweetAlert
       show={this.state.show}
       title="Heyyy!"
-      text="nice you have been login "
+      text="nice you have been logged in "
       onConfirm={() => {
         this.setState({ show: false })
       this.props.history.push('/home')
