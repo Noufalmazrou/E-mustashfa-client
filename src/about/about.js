@@ -1,39 +1,58 @@
 import React from 'react'
-import { Grid, Image } from 'semantic-ui-react'
+import { Header, Grid, Image, Icon, Container } from 'semantic-ui-react'
+import Slidershow from '../Home/Slidershow'
+import emu from '../img/emu.jpg'
+import mission from '../img/mission.jpg'
+
 
 const GridExampleCelledInternally = () => (
-  <Grid celled='internally'>
-    <Grid.Row>
-      <Grid.Column width={3}>
-        <Image src='https://hcplive.s3.amazonaws.com/v1_media/_image/happydoctor.jpg' />
-      </Grid.Column>
-      <Grid.Column width={10}>
-        <Image src='http://ordibeheshtshifa.com/wp-content/uploads/2018/09/doctor-img2.png' />
-      </Grid.Column>
-      <Grid.Column width={3}>
-        <Image src='https://image.freepik.com/free-photo/doctor-smiling-with-stethoscope_1154-36.jpg' />
-      </Grid.Column>
-    </Grid.Row>
 
-    We will help to find health, to everyone.
-The optimum ratio of price and quality responsible and conscientious approach
-On the basis of the medical center “Nordis” can be given a thorough examination of the body 
-and get the advice of highly qualified specialists in various fields of medicine. According to studies, 
-our doctors will make an individual program of prevention and treatment of identified diseases, directed to a surgical treatment if necessary. 
-In today’s operational department conducted a wide range of operations under local and general anesthesia.
+  <div>
 
-    <Grid.Row>
-      <Grid.Column width={3}>
-        <Image src='https://www.publicdomainpictures.net/pictures/210000/nahled/doctor-1490804718D0I.jpg' />
-      </Grid.Column>
-      <Grid.Column width={10}>
-        <Image src='https://www.publicdomainpictures.net/pictures/210000/nahled/doctor-1490804731WQI.jpg' />
-      </Grid.Column>
-      <Grid.Column width={3}>
-        <Image src='https://resize.hswstatic.com/w_907/gif/becoming-doctor.jpg' />
-      </Grid.Column>
-    </Grid.Row>
-  </Grid>
+    <Header>
+
+      <img src={emu} style={{ height: '600px', width: '100%' }} />
+    </Header>
+    <Container >
+
+      <p> <center> <h2 className="about ">
+        <br />
+        <h2>About Us</h2>
+        <br />
+
+        We will help to find health, to everyone.
+     The optimum ratio of price and quality responsible and conscientious approach
+     On the basis of the medical center “Nordis” can be given a thorough examination of the body
+     and get the advice of highly qualified specialists in various fields of medicine. According to studies,
+     our doctors will make an individual program of prevention and treatment of identified diseases, directed to a surgical treatment if necessary.
+     In today’s operational department conducted a wide range of operations under local and general anesthesia.   <br />
+</h2></center></p>
+   
+    </Container>
+    <br />    <br />      <br />    <br />      <br />    <br />      <br />    <br />
+    <Container>
+
+      <Grid celled='internally' className="mission ">
+        <Grid.Row>
+          <Grid.Column width={2}>
+            <Icon disabled name='  bookmark outline' size="huge" />
+            <br />    <br />
+            <center><h2> Our mission </h2> </center>
+          </Grid.Column>
+        </Grid.Row>
+
+        <Grid.Row>
+          <Grid.Column>
+            <p>
+
+              <h3>  Developing an application that allows the user to easily save his medical data and information to allow him to access this information at any time quickly and easily</h3>
+            </p>
+          </Grid.Column>
+        </Grid.Row>
+
+      </Grid>
+    </Container>
+  </div>
 )
 
 export default GridExampleCelledInternally

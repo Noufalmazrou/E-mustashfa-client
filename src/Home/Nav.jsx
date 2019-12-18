@@ -13,6 +13,7 @@ export default class Nav extends Component {
   handleItemClick = (e, { name }) => this.setState({ activeItem: name })
   logout = () => {
     localStorage.removeItem("usertoken");
+    window.location.reload();
   }
 
   scrollTo = () =>{

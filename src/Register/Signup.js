@@ -1,9 +1,10 @@
 import React, { Component } from 'react'
-import { Divider, Form, Label, Button } from 'semantic-ui-react' 
+import { Divider, Form, Label, Button ,Container} from 'semantic-ui-react' 
 import "semantic-ui-css/semantic.min.css"
 import axios from 'axios'
 import Swal from 'sweetalert2'
 export default class Signup extends Component {
+
   state = {}
 
   
@@ -53,7 +54,9 @@ export default class Signup extends Component {
     console.log(this.state)
 
     return (
-      <div>
+
+      
+      <Container className="signup" >
         <Form onSubmit={this.submit} action='http://locahost:5100/auth/register' method="post">
           <Form.Field>
             <input type='text' placeholder='First name' name="first_name" onChange={this.onChange} />
@@ -99,7 +102,7 @@ export default class Signup extends Component {
 
 
 
-      </div>
+      </Container>
     )
   }
 }

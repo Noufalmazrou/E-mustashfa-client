@@ -4,7 +4,7 @@ import M1 from '../img/M1.jpg'
 import M3 from '../img/M3.jpeg'
 import M4 from '../img/M4.jpg'
 import M6 from '../img/M6.jpeg'
-import M10 from '../img/M10.jpg'
+import M2 from '../img/M2.png'
 
 const Cards = () => (
   <Container width={768} >
@@ -17,7 +17,7 @@ const Cards = () => (
           <Grid.Column width={8}>
             <Card
               fluid 
-              image={M10} className="M" 
+              image={M2} className="M" 
             
               href='#Medical Records'
               header='Medical Records '

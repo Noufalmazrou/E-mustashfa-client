@@ -4,9 +4,14 @@ import "semantic-ui-css/semantic.min.css"
 import axios from 'axios'
 import Swal from 'sweetalert2'
 
+
 export default class Signin extends Component {
   state = {}
-
+componentDidMount(){
+  if(localStorage.usertoken){
+    window.location.replace("./");
+  }
+}
   onChange = (e) => {
     this.setState({
       [e.target.name]: e.target.value
@@ -31,8 +36,9 @@ export default class Signin extends Component {
         } else {
 
           localStorage.setItem('usertoken', res.data)
-
-
+            
+          //HERE 
+          window.location.reload();
 
           this.setState({ show: true })
 
@@ -46,6 +52,7 @@ export default class Signin extends Component {
   render() {
     console.log(this.state)
     return (
+      <Container className="signup" >
       <Container fluid >
         
       <div fluid>
@@ -66,6 +73,7 @@ export default class Signin extends Component {
           <Button type='submit'>Submit</Button>
         </Form>
         </div>
+        </Container>
         </Container>
      
     )

@@ -230,3 +230,22 @@ font-size: large;
 
 }
 
+.about{
+  background-color:rgb(223, 219, 219);
+  font-style: oblique;
+
+}
+
+.mission{
+  background-color:rgb(223, 219, 219);
+  font-style: oblique;
+ 
+
+}
+
+.signup{
+
+  margin-top:10%;
+border-style: ;
+border-color:black;
+}
