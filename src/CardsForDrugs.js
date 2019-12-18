@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Card, Image, Button } from 'semantic-ui-react'
+import { Link } from 'react-router-dom/cjs/react-router-dom.min'
 import axios from 'axios'
 
 export class CardsForDrugs extends Component {
@@ -32,7 +33,7 @@ deleteItem=()=>{
   
     </Card.Content>
   <Button.Group>
-    <Button positive>Edit</Button>
+    <Button  as={Link} to ={ `/drugs/${this.props.drugid}`} positive> Edit</Button>
     <Button.Or />
     <Button negative onClick={this.deleteItem}>Delete</Button>
   </Button.Group>

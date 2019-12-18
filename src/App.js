@@ -16,6 +16,7 @@ import Nav from './Home/Nav'
 import Upload from './uploading/Upload'
 import Changepass from './Register/Changepass'
 import Appointment from "./Appointment";
+import EditItem from "./EditItem";
 import Surgries from './Surgries.js'
 import Diseases from './Diseases'
 import Medical from './Medical'
@@ -27,11 +28,10 @@ export class App extends Component {
   render() {
     return (
         <BrowserRouter>
-     
          <Nav/>
-         
           <Switch>
-            
+      
+      
             <Route exact path="/" component={ ()=> <Home/>} />
             <Route path="/AboutUs" component={ ()=> <AboutUs/>} />
             <Route path="/Reservations" component={ ()=> <Reservations/>} />
@@ -40,8 +40,10 @@ export class App extends Component {
             <Route path="/medicalrecords" render={ ()=> <Medicalrecords/>} />
             <Route path="/tests" component={ ()=> <Tests/>} />
             <Route path="/rays" component={ ()=> <Rays/>} />
-            <Route path="/drugs" component={ ()=> <Drugs/>} />
+            <Route exact path="/drugs" component={ ()=> <Drugs/>} />
             <Route path="/patiants" component={ ()=> <Patiants/>} />
+            {/* <Route path="/drugs/:id"  component={EditItem} /> */}
+            <Route path="/drugs/:id"  render = {(props) =>  <EditItem {...props}  />}/>
             {/* You can delete this VVV */}
             <Route path="/upload" component={ ()=> <Upload/>} /> 
             <Route path="/changePassword" component={ ()=> <Changepass/>} />
