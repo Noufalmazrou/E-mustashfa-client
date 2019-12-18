@@ -9,7 +9,7 @@ export default class Signin extends Component {
   state = {}
 componentDidMount(){
   if(localStorage.usertoken){
-    window.location.replace("./");
+    
   }
 }
   onChange = (e) => {
@@ -38,7 +38,7 @@ componentDidMount(){
           localStorage.setItem('usertoken', res.data)
             
           //HERE 
-          window.location.reload();
+          // window.location.reload();
 
           this.setState({ show: true })
 
