@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+
 }
 
 .App-logo {
@@ -36,3 +37,20 @@
     transform: rotate(360deg);
   }
 }
+.app{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 50px 0px 50px 40px;
+  grid-gap: 20px 20px;
+  opacity: .8;
+}
+.Edit{
+  color:white;
+  background-color: green
+}
+.Delete{
+  color:white;
+  background-color: red
+}
+
+

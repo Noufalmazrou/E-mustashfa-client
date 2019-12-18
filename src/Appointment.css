@@ -1,0 +1,8 @@
+.Appointment{
+    width: 1000px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 9%  
+}
