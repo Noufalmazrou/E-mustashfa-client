@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Input, Menu, Container } from 'semantic-ui-react'
 import "semantic-ui-css/semantic.min.css"
+import '../App.css';
 import { Link } from 'react-router-dom/cjs/react-router-dom.min'
 
 
@@ -9,29 +10,35 @@ export default class Nav extends Component {
     state = { activeItem: 'home' }
 
     handleItemClick = (e, { name }) => this.setState({ activeItem: name })
-  
+    logout =()=>{
+      localStorage.removeItem("usertoken");
+      window.location.reload();
+    }
     render() {
       const { activeItem } = this.state
   
    
         return (
             <div>
+        <Container className="n1">
                 
-        <Menu secondary>
-          <Menu.Item as ={Link} to ='/home' name='home' active={activeItem === 'home'} onClick={this.handleItemClick} />
+        <Menu secondary size='huge'>
+          <Menu.Item as ={Link} to ='/' name='home' active={activeItem === 'home'} onClick={this.handleItemClick} />
           <Menu.Item
           as ={Link} to ='/AboutUs'
             name='About us'
-            active={activeItem === 'About us'}
+            active={activeItem === 'About us'}home
             onClick={this.handleItemClick}
           />
           <Menu.Item
           as ={Link} to ='/Reservations'
 
-            name='Services'
-            active={activeItem === 'Services'}
+          name=' Medical Services'
+          active={activeItem === ' Medical Services'}
+          
             onClick={this.handleItemClick}
           />
+
           <Menu.Item
           as ={Link} to ='/Appointment'
 
@@ -40,9 +47,13 @@ export default class Nav extends Component {
             onClick={this.handleItemClick}
           />
           <Menu.Menu position='right'>
+
+          <Menu.Menu position='right' >
+
             <Menu.Item>
               <Input icon='search' placeholder='Search...' />
             </Menu.Item>
+            {!localStorage.usertoken? <>
             <Menu.Item
              as ={Link} to ='/signin'
               name='Signin'
@@ -56,10 +67,24 @@ export default class Nav extends Component {
               active={activeItem === 'Signup'}
               onClick={this.handleItemClick}
             />
-            
+            </>
+            : <>   <Menu.Item
+             
+              name='Logout'
+              active={activeItem === 'Logout'}
+              onClick={this.logout}
+            />
+
+            <Menu.Item
+            as ={Link} to ='/changePassword'
+              name='Change password'
+              active={activeItem === 'Change password'}
+              onClick={this.handleItemClick}
+            /></>}
           </Menu.Menu>
-          
+            
         </Menu>
+        </Container>
             </div>
         )
     }

@@ -1,8 +1,12 @@
 import React, { Component } from 'react'
 import Slidershow from '../Home/Slidershow'
 import Cards from './Cards'
-import { Input, Menu, Container } from 'semantic-ui-react'
+import { Input, Menu, Container, Grid } from 'semantic-ui-react'
 import "semantic-ui-css/semantic.min.css"
+import Footer from '../Footer'
+import Hospita from '../Appointments/Hospital'
+import Sections from '../Appointments/Sections'
+import Doctors from '../Appointments/Doctors'
 
 
 export default class Home extends Component {
@@ -19,8 +23,30 @@ export default class Home extends Component {
 
         <Slidershow />
 
-        <br/><br/><br/><br/>
+        <br />
+        <br />
+        <br />
+        <br />
+        <Container className='a'>
+          <p>
+            <h1>Welcome</h1>
+            <br />
+            <h2>Committed To Your Care since 2019</h2>
+            <br />
+            <h3>We aim to provide you with a healthcare journey focused on your wellbeing.
+                Let us transform your lives through clinical excellence, compassionate care and health education</h3>
+          </p>
+        </Container>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
         <Cards />
+
+        <Footer />
+
 
 
       </div>
