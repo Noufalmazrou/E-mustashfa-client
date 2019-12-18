@@ -6,7 +6,10 @@ import "react-datepicker/dist/react-datepicker.css";
 import axios from 'axios'
 import jwt from 'jsonwebtoken'
 import CardsForDrugs from '../CardsForDrugs';
+import { BrowserRouter, Route, Switch } from 'react-router-dom/cjs/react-router-dom';
+import EditItem from '../EditItem';
 export class Drugs extends Component {
+
 
   state={
     userId : '',
@@ -33,7 +36,7 @@ export class Drugs extends Component {
      this.setState({
       userId  :decoded.user._id
      })
-    //  console.log(decoded.user._id)
+     console.log(decoded.user._id)
 
   }
   onSubmit=()=>{
@@ -49,7 +52,8 @@ export class Drugs extends Component {
   }).then(res =>{
 console.log(res)
   }).catch(err=>console.log(err))
-  window.location.reload();
+  // window.location.reload();
+  alert("nice you have been add the mirgwana")
 }
       updateSearch =({target:{value , name}})=>{
     
@@ -77,7 +81,18 @@ console.log(res)
       })
       
         return (
+          
             <div>
+              <BrowserRouter>
+              <Switch>
+              {/* <Route path="drugs/:id" render={ (props)=> <EditItem {...props}  drugsData={ this.state.drug.length == 0?   0 : this.state.drug.filter(ele =>{
+        return  props.match.params.id == ele.drugid            
+          }) }/>} /> */}
+          <Route path="/drugs/:id"  component = {EditItem}/>
+          {/* <Route path="/drugs/:id"  component={EditItem} /> */}
+
+          </Switch>
+          </BrowserRouter>
               
     <div>
     <h6>How long have you been taking this drug</h6>
