@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import './App.css';
-import { Route, BrowserRouter, Switch,NavLink} from 'react-router-dom';
+import { Route, BrowserRouter, Switch, NavLink } from 'react-router-dom';
 import AboutUs from "./about/about";
 import Reservations from "./Reservations";
 import Signin from "./Register/Signin";
@@ -16,6 +16,12 @@ import Nav from './Home/Nav'
 import Upload from './uploading/Upload'
 import Changepass from './Register/Changepass'
 import Appointment from "./Appointment";
+import Surgries from './Surgries.js'
+import Diseases from './Diseases'
+import Medical from './Medical'
+
+
+
 
 export class App extends Component {
   render() {
@@ -42,6 +48,7 @@ export class App extends Component {
             <Route path="/appointment" component={ ()=> <Appointment/>} />            
           </Switch>
         </BrowserRouter>
+
     )
   }
 }
