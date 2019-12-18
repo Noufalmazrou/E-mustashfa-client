@@ -1,7 +1,6 @@
-.formup{
-
+.Appointment{
     width: 1000px;
-    height: 100px;
+    height: 90px;
     display: flex;
     justify-content: center;
     margin: 0 auto;

@@ -31,9 +31,9 @@ export default class Nav extends Component {
     return (
       <div>
         <Container className="n1">
-
-          <Menu secondary size='huge'>
-            <Menu.Item as={Link} to='/' name='home' active={activeItem === 'home'} onClick={this.handleItemClick} />
+        <Menu secondary size='huge'>
+          <Menu.Item as ={Link} to ='/' name='home' active={activeItem === 'home'} onClick={this.handleItemClick} />
+        
             <Menu.Item
               as={Link} to='/AboutUs'
               name='About us'
