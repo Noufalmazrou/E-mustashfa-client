@@ -31,7 +31,9 @@ const Cards = () => (
             <Card
               fluid
               image={M4}
+
               href='Rays'
+
               header='Rays'
               description='Rays of the patient.'
             />
