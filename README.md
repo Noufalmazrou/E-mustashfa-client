@@ -1,69 +1,58 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `yarn start`
-
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
-# E-mustashfa-client
+## Project Title
+E-Mustashfa
+## Description
+- The E-Mustshfa web app is a personal health record app available for web,  it is easy for the patients to store, record and share the personal medical data with any doctors or healthcare providers through the internet.
+This web app helps the patient in storing and tracking the diet, weight, medications, allergies, health history, fitness, lab results, X-rays, scans, blood pressure and other health-related information. 
+## Technical Used
+- MERN Stack
+- MongoDB
+- Express
+- React CRUD
+- Nodejs
+- Semantic ui react
+## Wireframes
+- Home page
+![Home Page 1 ](https://i.imgur.com/0YVEaOl.png)
+![Home Page 2 ](https://i.imgur.com/lZkSwAU.png)
+- Registriation Page
+![Register](https://i.imgur.com/ysWBVC7.png)
+- Registrision successful and login page
+![Login](https://i.imgur.com/356QfzC.png)
+![Database for users](https://i.imgur.com/OhqgRzL.png)
+## User Stories
+- As a user i would like to have a webapp for an Elctronic medical record  .
+- As a user i would like to be able to registr .
+- As a user i would like to be able to signin and put my medical history.
+- As a user i would like to upload  edit and delete the files.
+- As a user i would like to  book an appointment with a doctor .>>> future work
+## Planning and Development Process
+1st day
+- Divided the tasks
+- Made the Schemas for the database
+- Made a part of the Authintecation
+- Home page front-end
+2nd day
+- Made the Registerasion and login page and its connection with the backend
+- crteated the homepage and the forms
+- created rountign
+3rd day
+- Made the connection between Home page and back-end
+- Made the Activites pages .
+- did a couple of styling changes
+4th day
+- Made the README file
+- Change password funcionality
+- Connecting frontend pages with back-end
+- Made the booking confirmation
+- had a ton of fun :)
+## Problem-Solving Strategy
+- brianstormaing
+- printing everything 
+- googling errors
+- asking for help
+- reading the documentation :## Acknowledgments
+ - We would like to thank our  beautiful and geniuses instructors and classmates for their motivation and providing help.
+ - our team is so amazing : - 
+## References
+- Semantic ui React
+- (https://react.semantic-ui.com/)
